@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koinot Sirlari - LuminaUZ</title>
+    <link rel="stylesheet" href="book_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="geometric-pattern"></div>
+    
+    <div class="top-nav">
+        <a href="luminauz.html"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="luminauz.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+
+    <a href="luminauz.html" class="back-btn-right">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+        <!-- Left cosmic book section -->
+        <div class="left-panel">
+            <div class="orbit-ring">
+                <div class="planet"></div>
+            </div>
+            <div class="orbit-ring delayed">
+                <div class="astrolabe"></div>
+            </div>
+            
+            <div class="book-cover">
+                <img src="https://telegra.ph/file/bf812dd803e5c4b8ff5e5.jpg" alt="Koinot Sirlari">
+            </div>
+        </div>
+
+        <!-- Right detail section -->
+        <div class="right-panel">
+            
+            <!-- Glass Title Box -->
+            <div class="glass-box title-box">
+                <h1>Koinot Sirlari</h1>
+                <p>Stephen Hawking</p>
+                
+                <div class="genre-section">
+                    <span class="genre-title">JANRLAR</span>
+                    <div class="genres">
+                        <div class="genre-item">
+                            <i class="fa-solid fa-telescope"></i>
+                            <span>ILM-FAN</span>
+                        </div>
+                        <div class="genre-item">
+                            <i class="fa-solid fa-moon"></i>
+                            <span>KOSMOS</span>
+                        </div>
+                        <div class="genre-item">
+                            <i class="fa-solid fa-atom"></i>
+                            <span>FALSAFIY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description Box -->
+            <div class="glass-box desc-box">
+                <h3>Qisqacha ta'rif</h3>
+                <p>Koinotning kelib chiqishi, qora tuynuklar va vaqt tabiati haqida ajoyib ilmiy asar. Bu kitob orqali siz koinotning eng sirlariga sayohat qilasiz.</p>
+                
+                <div class="particles">
+                    <div class="particle p1"></div>
+                    <div class="particle p2"></div>
+                    <div class="particle p3"></div>
+                </div>
+            </div>
+
+            <!-- Read Button -->
+            <a href="#" class="read-btn">O'QISH</a>
+
+        </div>
+    </div>
+
+        <!-- E-Reader Modal -->
+    <div class="modal-overlay reader-overlay" id="pdfModal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <div class="reader-container">
+            <h1 class="book-title">Koinot Sirlari</h1>
+            <h2 class="book-author">Stephen Hawking</h2>
+            <div class="book-pages">
+                <div class='book-chapter'>I bob: Olamning paydo bo'lishi</div><p class='book-paragraph book-dropcap'>Koinot qanday paydo bo'lgan? U cheksizmi yoki uning chegarasi bormi? Vaqt qachon boshlangan va u qachondir tugaydimi? Bu kabi savollar insoniyatni azaldan o'ylantirib kelgan. Eng yirik mutafakkirlar osmonga yuzlanib, undagi yulduzlar qa'ridan sirlarni izlashgan.</p><p class='book-paragraph'>Hozirgi kunda ilm-fan koinot haqida tobora ko'proq ma'lumot qidirmoqda. Katta Portlash nazariyasiga ko'ra, olam bir vaqtlar juda kichik va zich nuqtadan iborat bo'lgan. Keyin esa aql bovar qilmas darajada tez kengaya boshlagan.</p><p class='book-paragraph'>Qora tuynuklar, galaktikalar, yulduz to'dalari - bularning barchasi aslida yagona qonuniyatlarga bo'ysunadi. Tabiat biz kutgandan ko'ra ancha qiziqarli va murakkab geometriyaga ega ekanligi kashf etildi.</p>
+            </div>
+        </div>
+    </div><script>
+    const readBtn = document.querySelector('.read-btn');
+    const modal = document.getElementById('pdfModal');
+    const closeBtn = document.getElementById('closeModal');
+
+    if(readBtn && modal) {
+        readBtn.onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        };
+    }
+
+    if(closeBtn && modal) {
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        };
+    }
+
+    window.onclick = function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+</script>
+</body>\n</html>

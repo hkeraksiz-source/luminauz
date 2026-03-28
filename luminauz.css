@@ -1,0 +1,1833 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(https://i.pinimg.com/1200x/b6/24/2b/b6242b3d50b13411c66cd40f55a11a4d.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav{
+    height: 11.5vh;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 15vh;
+    padding: 0 5%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.lumina{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 126, 95);
+    position: relative;
+    left: 10vh;
+}
+
+a{
+
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+    left: 20vh;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+
+.qidir{
+    position: absolute;
+    right: 26vh;
+    width: 8vh;
+    height: 5vh;
+    border-radius: 20px;
+
+    outline: none;
+    padding: 0 10px;
+    border-width: 1px;
+}
+
+.qidir:focus{
+    width: 20vh;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    
+}
+
+.qidiruv{
+    font-size: 2.5vh;
+    position: relative;
+    right: -26vh;
+    top: 0.1vh;
+
+}
+
+#fokus{
+    cursor: pointer;
+}
+    
+
+
+.kir{
+    position: absolute;
+    right: 5vh;
+    width: 18vh;
+    height: 7vh;
+    border-radius: 25px;
+    border: none;
+    padding: 0 10px;
+    background: linear-gradient(to right,rgb(223, 44, 188),rgb(56, 56, 225));
+}
+
+.kel{
+    position: absolute;
+    left: 40%;
+    width: 35vh;
+    height: 4vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: shake 1s ease-in-out infinite;
+    animation-direction: alternate;
+    animation-delay: 0.3s;
+}
+
+.kelk{
+    color: rgb(122, 12, 95);
+}
+
+@keyframes shake{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+
+.bil{
+    position: relative;
+    top: 12vh;
+    
+    font-size: 17vh;
+    font-weight: bold;
+    text-shadow: 10px 10px 10px rgb(155, 150, 150);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.kit{
+    position: relative;
+    top: 8vh;
+    
+    font-size: 17vh;
+    font-weight: bold;
+    color: #FF0080;
+    text-shadow: 5px 5px 5px #fc9ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.izoh{
+    position: relative;
+    top: 7vh;
+    
+    font-size: 2vh;
+    font-weight: 600;
+    width: 90vh;
+    height: 25vh;
+    background-color: #cfc9cb;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 10px 10px 20px rgb(131, 125, 125);
+    
+    
+
+}
+
+.izohdef{
+    color: black;
+    opacity: 0.7;
+}
+
+.kutub{
+    position: absolute;
+    left: 80vh;
+    top: 87vh;
+    width: 24vh;
+    height: 9vh;
+    background: linear-gradient(135deg,rgb(242, 72, 123),rgb(56, 56, 225));
+    border-radius: 35px;
+    border: none;
+    padding: 0 10px;
+    animation: tugright 2s ease-in-out infinite;
+    animation-direction: alternate;
+    font-size: 2vh;
+    color: white;
+    font-weight: 600;
+    
+    
+}
+
+.batafsil{
+    position: absolute;
+    left: 106vh;
+    top: 87vh;
+    width: 24vh;
+    height: 9vh;
+    background-color: white;
+    border-radius: 35px;
+    border: none;
+    padding: 0 10px;
+    animation: tugleft 2s ease-in-out infinite;
+    animation-direction: alternate;
+    font-size: 2vh;
+    color: black;
+    font-weight: 600;
+    
+    
+}
+
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+@keyframes tugleft{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(10px);
+    }
+}
+
+@keyframes tugright{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-10px);
+    }
+}
+
+.section{
+    width: 100%;
+    height: 380vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    top: 25vh;
+}
+
+.top{
+    position: relative;
+    top: 15vh;
+    left: 9vh;
+    font-weight: bold;
+    font-size: 4vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0.7;
+    
+}
+
+.reyting{
+    position: relative;
+    top: 16vh;
+    left: 9vh;
+    font-size: 2.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    opacity: 0.7;
+}
+
+.barchasi{
+    position: relative;
+    top: 13vh;
+    left: 9vh;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 25px;
+    border: none;
+    padding: 0 10px;
+    background-color: white;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+    
+}
+
+.fantastik{
+    position: relative;
+    top: 13vh;
+    left: 9vh;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 25px;
+    border: none;
+    padding: 0 10px;
+    background-color: white;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.tarix{
+    position: relative;
+    top: 13vh;
+    left: 9vh;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 25px;
+    border: none;
+    padding: 0 10px;
+    background-color: white;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.fan{
+    position: relative;
+    top: 13vh;
+    left: 9vh;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 25px;
+    border: none;
+    padding: 0 10px;
+    background-color: white;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kategory{
+    position: absolute;
+    top: 8vh;
+    right: 15vh;
+    display: flex;
+    gap: 15px;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.barchasi:focus{
+    background: linear-gradient(135deg,rgb(223, 44, 188),rgb(56, 56, 225));
+    color: white;
+    opacity: 1;
+    border: none;
+}
+
+.fantastik:focus{
+    background: linear-gradient(135deg,rgb(223, 44, 188),rgb(56, 56, 225));
+    color: white;
+    opacity: 1;
+    border: none;
+}
+
+.tarix:focus{
+    background: linear-gradient(135deg,rgb(223, 44, 188),rgb(56, 56, 225));
+    color: white;
+    opacity: 1;
+    border: none;
+}
+
+.fan:focus{
+    background: linear-gradient(135deg,rgb(223, 44, 188),rgb(56, 56, 225));
+    color: white;
+    opacity: 1;
+    border: none;
+}
+
+hr{
+    position: relative;
+    top: 18vh;
+    left: 9vh;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.karta{
+    position: relative;
+    top: 20vh;
+    left: 8vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+}
+
+.karta2{
+    position: absolute;
+    top: 30vh;
+    left: 58vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+}
+
+.karta3{
+    position: absolute;
+    top: 30vh;
+    left: 108vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+}
+
+.karta4{
+    position: absolute;
+    top: 30vh;
+    left: 158vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+}
+
+.karta5{
+    position: absolute;
+    top: 105vh;
+    left: 8vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+}
+
+.karta6{
+    position: absolute;
+    top: 105vh;
+    left: 58vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;    
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+    }
+
+.karta7{
+    position: absolute;
+    top: 105vh;
+    left: 108vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+}
+
+.karta8{
+    position: absolute;
+    top: 105vh;
+    left: 158vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+}
+
+.karta9{
+    position: absolute;
+    top: 180vh;
+    left: 108vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+}
+
+.karta10{
+    position: absolute;
+    top: 180vh;
+    left: 158vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+}
+
+.karta11{
+    position: absolute;
+    top: 180vh;
+    left: 58vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+}
+
+.karta12{
+    position: absolute;
+    top: 180vh;
+    left: 8vh;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+   
+}
+
+.karta12:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.more{
+    width: 35vh;
+    height: 6vh;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 2.8vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 260vh;
+    left: 85vh;
+
+}
+
+.rasm{
+    width: 85vh;
+    height: 80vh;
+    border-radius: 15px;
+    position: absolute;
+    top: 290vh;
+    left: 15vh;
+}
+
+.daraja{
+    position: absolute;
+    top: 308vh;
+    left: 115vh;
+    font-size: 7vh;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+
+.kitobb{
+    position: absolute;
+    top: 325vh;
+    left: 115vh;
+    font-size: 2.5vh;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    opacity: 0.7;
+}
+
+.count{
+    position: absolute;
+    top: 342vh;
+    left: 115vh;
+    font-size: 5vh;
+    font-weight: 600;
+    color: white;
+    
+}
+
+.count2{
+    position: absolute;
+    top: 342vh;
+    left: 155vh;
+    font-size: 5vh;
+    font-weight: 600;
+    color: white;
+    
+}
+
+.countdef{
+    position: absolute;
+    top: 348vh;
+    left: 115vh;
+    font-weight: 600;
+    color: white;
+    opacity: 0.4;
+}
+
+.countdef2{
+    position: absolute;
+    top: 348vh;
+    right: 31vh;
+    font-weight: 600;
+    color: white;
+    opacity: 0.4;
+
+}
+
+.book{
+    position: relative;
+    left: 5vh;
+}
+
+.section2{
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 490vh;
+    
+    
+    
+}
+
+.footer{
+    position: relative;
+    left: 90vh;
+    top: 10vh;
+    font-size: 5vh;
+
+}
+
+.footer2{
+    position: relative;
+    top: 15vh;
+    left: 73vh;
+    font-size: 3vh;
+    color: white;
+    opacity: 0.7;
+}
+
+.baho{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho2{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho3{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho4{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho5{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho6{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho7{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho8{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho9{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho10{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho11{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.baho12{
+    width: 8vh;
+    height: 3vh;
+    border-radius: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 34vh;
+    top: 2vh;
+    z-index: 500;
+    background-color: white;
+    text-align: center;
+    z-index: 99999;
+
+}
+
+.sayns{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns2{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns3{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns4{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns5{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns6{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns7{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns8{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns9{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns10{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns11{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.sayns12{
+    position: absolute;
+    top: 45vh;
+    left: 4vh;
+    font-size: 3vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(249, 4, 187);
+    opacity: 0.7;
+}
+
+.kitob{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob2{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob3{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob4{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob5{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob6{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob7{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob8{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob9{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob10{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob11{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.kitob12{
+    position: absolute;
+    top: 50vh;
+    left: 4vh;
+    font-size: 4.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+.kirish{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: 2vh;
+    left: 2vh;
+    z-index: 500;
+    font-style: italic;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#abot{
+    scroll-margin-top: -195vh;
+}
+
+.avtor{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor2{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor3{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor4{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor5{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor6{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor7{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor8{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor9{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor10{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor11{
+    position: absolute;
+    top: 56vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.avtor12{
+    position: absolute;
+    top: 59.5vh;
+    left: 4vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    opacity: 0.7;
+}
+
+.read{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read2{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read3{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read4{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read5{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read6{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read7{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read8{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read9{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read10{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read11{
+    position: absolute;
+    top: 61vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+.read12{
+    position: absolute;
+    top: 62vh;
+    left: 8.5vh;
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+    border-radius: 3vh;
+    border: none;
+    width: 25vh;
+    height: 6vh;
+}
+
+
+#bahoo12{
+    color: yellow;
+}
+
+#bahoo11{
+    color: yellow;
+}
+
+#bahoo10{
+    color: yellow;
+}
+
+#bahoo9{
+    color: yellow;
+}
+
+#bahoo8{
+    color: yellow;
+}
+
+#bahoo7{
+    color: yellow;
+}
+
+#bahoo6{
+    color: yellow;
+}
+
+#bahoo5{
+    color: yellow;
+}
+
+#bahoo4{
+    color: yellow;
+}
+
+#bahoo3{
+    color: yellow;
+}
+
+#bahoo2{
+    color: yellow;
+}
+
+#bahoo{
+    color: yellow;
+}
+
+#kitobcha{
+    color: rgb(255, 85, 0);
+}
+
+.footer{
+    color: rgb(255, 85, 0);
+}
+
+.kir{
+    position: relative;
+    top: -2vh;
+    left: 17vh;
+    z-index: 500;
+    border-radius: 3.5vh;
+    border: none;
+    color: white;
+    font-size: 2.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg,rgb(241, 20, 204),rgb(66, 66, 253));
+}
+
+.poster{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+
+@keyframes reklama{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.05);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0,1);
+    }
+}
+
+.karta12:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta11:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta10:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta9:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta8:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta7:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta6:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta5:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta4:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta3:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta2:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.karta:hover{
+    animation: reklama 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.poster2{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poster3{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poster4{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poster5{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poster6{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poster7{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poster8{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poster9{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poster10{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poster11{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.poster12{
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.uff1{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff2{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff3{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff4{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff5{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff6{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff7{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff8{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff9{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff10{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff11{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+.uff12{
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+
+.nimadur1{
+    position: absolute;
+    left: 5vh;
+    z-index: 1000000;
+}
+
+.nimadur2{
+    position: absolute;
+    left:3vh;
+    z-index: 1000000;
+    font-size: 2.3vh;
+    top: 3vh;
+
+
+}
+
+.nimadur1{
+    position: absolute;
+    left: 1vh;
+    z-index: 1000000;
+    font-size: 2.3vh;
+    top: 3vh;
+    color: white;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuromancer - LuminaUZ</title>
+    <link rel="stylesheet" href="book_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="geometric-pattern"></div>
+    
+    <div class="top-nav">
+        <a href="luminauz.html"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="luminauz.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+
+    <a href="luminauz.html" class="back-btn-right">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+        <!-- Left cosmic book section -->
+        <div class="left-panel">
+            <div class="orbit-ring">
+                <div class="planet"></div>
+            </div>
+            <div class="orbit-ring delayed">
+                <div class="astrolabe"></div>
+            </div>
+            
+            <div class="book-cover">
+                <img src="https://i.pinimg.com/736x/53/67/31/536731c921a187317400022c7e3aea51.jpg" alt="Neuromancer">
+            </div>
+        </div>
+
+        <!-- Right detail section -->
+        <div class="right-panel">
+            
+            <!-- Glass Title Box -->
+            <div class="glass-box title-box">
+                <h1>Neuromancer</h1>
+                <p>William Gibson</p>
+                
+                <div class="genre-section">
+                    <span class="genre-title">JANRLAR</span>
+                    <div class="genres">
+                        <div class="genre-item">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>FANTASTIKA</span>
+                        </div>
+                        <div class="genre-item">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>KIBERPANK</span>
+                        </div>
+                        <div class="genre-item">
+                            <i class="fa-solid fa-wifi"></i>
+                            <span>ILM-FAN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description Box -->
+            <div class="glass-box desc-box">
+                <h3>Qisqacha ta'rif</h3>
+                <p>Sun'iy intellekt, xakerlar va virtual olamdagi qiziqarli shuningdek, xavfli bilish talab qilinadigan voqealar.</p>
+                
+                <div class="particles">
+                    <div class="particle p1"></div>
+                    <div class="particle p2"></div>
+                    <div class="particle p3"></div>
+                </div>
+            </div>
+
+            <!-- Read Button -->
+            <a href="#" class="read-btn">O'QISH</a>
+
+        </div>
+    </div>
+
+        <!-- E-Reader Modal -->
+    <div class="modal-overlay reader-overlay" id="pdfModal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <div class="reader-container">
+            <h1 class="book-title">Neuromancer</h1>
+            <h2 class="book-author">William Gibson</h2>
+            <div class="book-pages">
+                <div class='book-chapter'>Kirish: Sprawl</div><p class='book-paragraph book-dropcap'>Keys o'zining miyasidagi o'zgarishlarni sezardi. U matrisaning bolasi, eng zo'r maxfiy xakerlardan edi. Ammo asab tizimi zararlangandan so'ng, u reallik iskanjasiga tushib qoldi.</p><p class='book-paragraph'>Qorong'i bar qurchshovida kimdir o'z ichimligini simirarkan, Keys o'yinning navbatdagi xavfli qonunlarini qabul qildi. Taklif qilingan davolanish uning borlig'ini qayta tiklashi mumkin edi, ammo badal juda baland.</p><p class='book-paragraph'>U sun'iy intellekt tarmoqlariga sho'ng'igan sari chigallikning cheki yo'qligini, bu yerda g'alati 'arvohlar' kezinib yurganini tushuna boshladi.</p>
+            </div>
+        </div>
+    </div><script>
+    const readBtn = document.querySelector('.read-btn');
+    const modal = document.getElementById('pdfModal');
+    const closeBtn = document.getElementById('closeModal');
+
+    if(readBtn && modal) {
+        readBtn.onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        };
+    }
+
+    if(closeBtn && modal) {
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        };
+    }
+
+    window.onclick = function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+</script>
+</body>\n</html>

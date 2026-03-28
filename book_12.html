@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaqtning qisqacha ta'rifi - LuminaUZ</title>
+    <link rel="stylesheet" href="book_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="geometric-pattern"></div>
+    
+    <div class="top-nav">
+        <a href="luminauz.html"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="luminauz.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+
+    <a href="luminauz.html" class="back-btn-right">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+        <!-- Left cosmic book section -->
+        <div class="left-panel">
+            <div class="orbit-ring">
+                <div class="planet"></div>
+            </div>
+            <div class="orbit-ring delayed">
+                <div class="astrolabe"></div>
+            </div>
+            
+            <div class="book-cover">
+                <img src="https://i.pinimg.com/736x/ee/e0/1d/eee01d6db32a7f63f360b8278c0c17da.jpg" alt="Vaqtning qisqacha ta'rifi">
+            </div>
+        </div>
+
+        <!-- Right detail section -->
+        <div class="right-panel">
+            
+            <!-- Glass Title Box -->
+            <div class="glass-box title-box">
+                <h1>Vaqtning qisqacha ta'rifi</h1>
+                <p>Stephen Hawking</p>
+                
+                <div class="genre-section">
+                    <span class="genre-title">JANRLAR</span>
+                    <div class="genres">
+                        <div class="genre-item">
+                            <i class="fa-solid fa-infinity"></i>
+                            <span>ILM-FAN</span>
+                        </div>
+                        <div class="genre-item">
+                            <i class="fa-solid fa-meteor"></i>
+                            <span>KOSMOS</span>
+                        </div>
+                        <div class="genre-item">
+                            <i class="fa-solid fa-book"></i>
+                            <span>FALSAFIY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description Box -->
+            <div class="glass-box desc-box">
+                <h3>Qisqacha ta'rif</h3>
+                <p>Katta portlashdan qora tuynuklargacha bo'lgan koinot tarixi, makon hamda vaqtning fundamental qonunlari.</p>
+                
+                <div class="particles">
+                    <div class="particle p1"></div>
+                    <div class="particle p2"></div>
+                    <div class="particle p3"></div>
+                </div>
+            </div>
+
+            <!-- Read Button -->
+            <a href="#" class="read-btn">O'QISH</a>
+
+        </div>
+    </div>
+
+        <!-- E-Reader Modal -->
+    <div class="modal-overlay reader-overlay" id="pdfModal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <div class="reader-container">
+            <h1 class="book-title">Vaqtning Qisqacha Ta'rifi</h1>
+            <h2 class="book-author">Stephen Hawking</h2>
+            <div class="book-pages">
+                <div class='book-chapter'>I bob: Olam Manzarasi</div><p class='book-paragraph book-dropcap'>Biz kimmiz? Qayerdan keldik? Koinot qachon va qanday paydo bo'lgan? Ba'zan biz kundalik tashvishlarga sho'ng'ib, bunday oliy savollarni unutib qo'yamiz.</p><p class='book-paragraph'>Yulduzlarning nur taratishi, tortishish qonuni va relyativistik nazariyalar bizning koinot haqidagi tasavvurlarimizni kundan-kunga inqilobiy tarzda o'zgartirmoqda. Bularning barchasi aslida mukammal asarga o'xshaydi.</p><p class='book-paragraph'>Agar biz qachondir hamma narsaning birlashtiruvchi to'liq nazariyasini topa olsak, bu inson idrokining eng buyuk g'alabasi bo'lar edi. Ana shunda biz yaratuvchining aqlini anglagan bo'lamiz.</p>
+            </div>
+        </div>
+    </div><script>
+    const readBtn = document.querySelector('.read-btn');
+    const modal = document.getElementById('pdfModal');
+    const closeBtn = document.getElementById('closeModal');
+
+    if(readBtn && modal) {
+        readBtn.onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        };
+    }
+
+    if(closeBtn && modal) {
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        };
+    }
+
+    window.onclick = function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+</script>
+</body>\n</html>

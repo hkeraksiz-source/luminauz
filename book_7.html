@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosmos - LuminaUZ</title>
+    <link rel="stylesheet" href="book_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="geometric-pattern"></div>
+    
+    <div class="top-nav">
+        <a href="luminauz.html"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="luminauz.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+
+    <a href="luminauz.html" class="back-btn-right">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+        <!-- Left cosmic book section -->
+        <div class="left-panel">
+            <div class="orbit-ring">
+                <div class="planet"></div>
+            </div>
+            <div class="orbit-ring delayed">
+                <div class="astrolabe"></div>
+            </div>
+            
+            <div class="book-cover">
+                <img src="https://i.pinimg.com/1200x/0f/4c/13/0f4c1319baa2deea4631fdd0b49fd556.jpg" alt="Kosmos">
+            </div>
+        </div>
+
+        <!-- Right detail section -->
+        <div class="right-panel">
+            
+            <!-- Glass Title Box -->
+            <div class="glass-box title-box">
+                <h1>Kosmos</h1>
+                <p>Karl Sagan</p>
+                
+                <div class="genre-section">
+                    <span class="genre-title">JANRLAR</span>
+                    <div class="genres">
+                        <div class="genre-item">
+                            <i class="fa-solid fa-atom"></i>
+                            <span>ILM-FAN</span>
+                        </div>
+                        <div class="genre-item">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                            <span>KOSMOS</span>
+                        </div>
+                        <div class="genre-item">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>FALSAFIY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description Box -->
+            <div class="glass-box desc-box">
+                <h3>Qisqacha ta'rif</h3>
+                <p>Koinotning tuzilishi, yulduzlar evolyutsiyasi va insoniyatning koinotdagi o'rni haqida fundamental nashr.</p>
+                
+                <div class="particles">
+                    <div class="particle p1"></div>
+                    <div class="particle p2"></div>
+                    <div class="particle p3"></div>
+                </div>
+            </div>
+
+            <!-- Read Button -->
+            <a href="#" class="read-btn">O'QISH</a>
+
+        </div>
+    </div>
+
+        <!-- E-Reader Modal -->
+    <div class="modal-overlay reader-overlay" id="pdfModal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <div class="reader-container">
+            <h1 class="book-title">Kosmos</h1>
+            <h2 class="book-author">Karl Sagan</h2>
+            <div class="book-pages">
+                <div class='book-chapter'>Biz Koinotmiz</div><p class='book-paragraph book-dropcap'>Kosmos - bu borliqning o'zi. Biz bilgan va bilmagan hamma narsa shu yerda. Kosmosni o'rganish - o'zligimizni anglashdir. Biz koinotning ko'zi va aql-idrokimiz, qaysiki, u o'z-o'zini anglashga harakat qiladi.</p><p class='book-paragraph'>Yer koinotning cheksiz daryosidagi mitti bir hovuch chang xolos. Ammo mana shu kichik sayyorada qanday buyuk tuyg'ular, qanday murakkab hayot paydo bo'ldi.</p><p class='book-paragraph'>Sayyoramiz – koinot sarhadlaridagi nur sochuvchi nurli nuqta. Har bir inson ichida yulduzlar moddasi yashirin, biz - olamning kengayishdan iborat ulug' raqsida qatnashmoqdamiz.</p>
+            </div>
+        </div>
+    </div><script>
+    const readBtn = document.querySelector('.read-btn');
+    const modal = document.getElementById('pdfModal');
+    const closeBtn = document.getElementById('closeModal');
+
+    if(readBtn && modal) {
+        readBtn.onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        };
+    }
+
+    if(closeBtn && modal) {
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        };
+    }
+
+    window.onclick = function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+</script>
+</body>\n</html>

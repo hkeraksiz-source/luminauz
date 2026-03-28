@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyuk Ipak Yo'li - LuminaUZ</title>
+    <link rel="stylesheet" href="book_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="geometric-pattern"></div>
+    
+    <div class="top-nav">
+        <a href="luminauz.html"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="luminauz.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+
+    <a href="luminauz.html" class="back-btn-right">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <div class="container">
+        <!-- Left cosmic book section -->
+        <div class="left-panel">
+            <div class="orbit-ring">
+                <div class="planet"></div>
+            </div>
+            <div class="orbit-ring delayed">
+                <div class="astrolabe"></div>
+            </div>
+            
+            <div class="book-cover">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjsGYC4pVyqC-3igS4YyFr-iuKAm8vaCdngA&s" alt="Buyuk Ipak Yo'li">
+            </div>
+        </div>
+
+        <!-- Right detail section -->
+        <div class="right-panel">
+            
+            <!-- Glass Title Box -->
+            <div class="glass-box title-box">
+                <h1>Buyuk Ipak Yo'li</h1>
+                <p>Tarixchi</p>
+                
+                <div class="genre-section">
+                    <span class="genre-title">JANRLAR</span>
+                    <div class="genres">
+                        <div class="genre-item">
+                            <i class="fa-solid fa-camel"></i>
+                            <span>TARIXIY</span>
+                        </div>
+                        <div class="genre-item">
+                            <i class="fa-solid fa-route"></i>
+                            <span>SAYOHAT</span>
+                        </div>
+                        <div class="genre-item">
+                            <i class="fa-solid fa-scroll"></i>
+                            <span>ILMIY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description Box -->
+            <div class="glass-box desc-box">
+                <h3>Qisqacha ta'rif</h3>
+                <p>Qadimiy savdo yo'llari, ularning sivilizatsiyalar rivojidagi o'rni va qiziqarli tarixiy faktlar.</p>
+                
+                <div class="particles">
+                    <div class="particle p1"></div>
+                    <div class="particle p2"></div>
+                    <div class="particle p3"></div>
+                </div>
+            </div>
+
+            <!-- Read Button -->
+            <a href="#" class="read-btn">O'QISH</a>
+
+        </div>
+    </div>
+
+        <!-- E-Reader Modal -->
+    <div class="modal-overlay reader-overlay" id="pdfModal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <div class="reader-container">
+            <h1 class="book-title">Buyuk Ipak Yo'li</h1>
+            <h2 class="book-author">Tarixchi</h2>
+            <div class="book-pages">
+                <div class='book-chapter'>Kirish: Karvonlar yo'li</div><p class='book-paragraph book-dropcap'>Asrlar davomida Sharq va G'arbni bog'lab turgan bu karvon yo'llari faqatgina xaritalardagi chiziqlar emasdi. Bu yerda inson taqdirlari, madaniyatlar, buyuk g'oyalar uchrashgan maydon edi.</p><p class='book-paragraph'>Xitoyning nozik ipak matolari, Hindistonning zira-vorlari, Movarounnahrning shirin mevalari karvonlar orqali olis o'lkalarga tarqalardi.</p><p class='book-paragraph'>Olimlar, savdogarlar, sayyohlar betinim harakatda edi. Shaharlar gullab-yashnar, bozorlar esa yerdagi jannatni eslatardi. Bilim va savdo uyg'unlashgan yo'l, insoniyat tarixidagi eng katta kashfiyotlardan biriga aylandi.</p>
+            </div>
+        </div>
+    </div><script>
+    const readBtn = document.querySelector('.read-btn');
+    const modal = document.getElementById('pdfModal');
+    const closeBtn = document.getElementById('closeModal');
+
+    if(readBtn && modal) {
+        readBtn.onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        };
+    }
+
+    if(closeBtn && modal) {
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        };
+    }
+
+    window.onclick = function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+</script>
+</body>\n</html>
